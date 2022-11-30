@@ -4,5 +4,19 @@
 }
 
 footer{
-  background-color: black;
+  background-color: #003030;
 }
+
+.navbar {
+  background: #003030!Important;
+}
+
+.test::after{
+  background: #0fd3bc;
+  content: "";
+  display: block;
+  height: 2px;  
+  width: 2.5rem;
+}
+
+

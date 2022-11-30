@@ -17,12 +17,12 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav m-auto">
               <a className="nav-link" href="">Home</a>
-              <a className="nav-link" href="">Features</a>
-              <a className="nav-link" href="">Pricing</a>
-              <a className="nav-link" href="">About us</a>
+              <a className="nav-link" href="">Computadoras</a>
+              <a className="nav-link" href="">Componentes</a>
+              <a className="nav-link" href="">Nosotros</a>
             </div>            
             <div className="d-flex align-items-center gap-3">
-              <CartWidget></CartWidget>
+              <CartWidget carrito={"5"}/>
               <form className='d-flex gap-3' role="search">
                 <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-outline-success" type="submit">Search</button>
@@ -33,6 +33,6 @@ const NavBar = () => {
       </nav>
     </div>
   ); 
-}
+};
 
 export default NavBar;
