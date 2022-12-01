@@ -1,10 +1,10 @@
 import React from 'react';
 import "../index.css";
 
-const ItemListContainer = ({prop}) => {
+const ItemListContainer = ({greetings}) => {
     return(
        <div>
-        <p className='alert alert-danger text-center'>{prop}</p>
+        <p className='alert alert-danger text-center'>{greetings}</p>
        </div>
     );
 }

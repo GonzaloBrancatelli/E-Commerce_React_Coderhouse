@@ -22,7 +22,7 @@ const NavBar = () => {
               <a className="nav-link" href="">Nosotros</a>
             </div>            
             <div className="d-flex align-items-center gap-3">
-              <CartWidget carrito={"5"}/>
+              <CartWidget cantidadEnCarrito={"3"}/>
               <form className='d-flex gap-3' role="search">
                 <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-outline-success" type="submit">Search</button>
