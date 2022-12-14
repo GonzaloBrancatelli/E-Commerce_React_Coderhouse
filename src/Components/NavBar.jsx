@@ -3,7 +3,7 @@ import CartWidget from './CartWidget';
 import logo from '../images/logo.png'; 
 import { Link, NavLink } from 'react-router-dom';
 
-
+ 
 
 const NavBar = () => {
  

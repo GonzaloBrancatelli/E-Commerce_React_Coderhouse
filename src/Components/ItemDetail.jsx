@@ -13,6 +13,6 @@ const ItemDetail = ({item}) => {
             </div>
         </div>
     )
-}
+} 
 
 export default ItemDetail;

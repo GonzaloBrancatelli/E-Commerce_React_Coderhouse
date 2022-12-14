@@ -11,7 +11,7 @@ const ItemCount = ({ stockItems }) => {
      }, [stockItems])
 
     const SumaCount = () => {
-        if (contador < stock) {
+        if (contador < stock) { 
             setContador(contador + 1);
         };
     };

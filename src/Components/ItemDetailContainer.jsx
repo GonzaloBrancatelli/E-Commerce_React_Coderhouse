@@ -4,7 +4,7 @@ import productos from "./json/productos.json";
 import '../index.css';
 import { useParams } from "react-router-dom";
 
-
+ 
 
 
 const ItemDetailContainer = () => {   

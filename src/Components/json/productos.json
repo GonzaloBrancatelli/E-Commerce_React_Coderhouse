@@ -11,4 +11,4 @@
     {"id": 10, "nombre": "Motherboard MSI B560 Tomahawk WIFI S.1200","stock": 10, "categoria": "componentes", "precio": 36.000, "descripcion": "Motherboard ultima generacion de gama media alta para procesadores INTEL", "imagen": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/MAG-B560-TOMAHAWK-WIFI_800.jpg"},
     {"id": 11, "nombre": "Memoria Ram PNY XLR8 GAMING 8GB 3200Mhz RGB DDR4","stock": 15, "categoria": "componentes", "precio": 15.400, "descripcion": "Memoria ram de 8GB a 3200MHz con perfil XMP2.0", "imagen": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/MD8GD4320016XRGB_800.jpg"},
     {"id": 12, "nombre": "Disco Solido SSD 500GB Kingston NV2 M.2 NVMe PCIe 3.0","stock": 12, "categoria": "componentes", "precio": 15.100, "descripcion": "Disco solido NVMe de alta velocidad para todos tus juegos y programas.", "imagen": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/SNV2S-500G_800.jpg"} 
-]
+] 

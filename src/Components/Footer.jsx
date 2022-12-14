@@ -5,7 +5,7 @@ const Footer = () => {
         color: "white",
         padding: "5px"
     };
-    
+     
     
     return (
         <footer className="container-fluid">

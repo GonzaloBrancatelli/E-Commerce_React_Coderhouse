@@ -12,6 +12,6 @@ const CartWidget = ({cantidadEnCarrito}) => {
             </button>
         </div>
     );
-};
+}; 
 
 export default CartWidget;
