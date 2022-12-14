@@ -1,35 +1,37 @@
 import React from "react";
 import { useState } from "react";
 
-const ItemCount = ({stockItems}) => {
+const ItemCount = ({ stockItems }) => {
 
     const [contador, setContador] = useState(1);
-    const [stock, setStock] = useState(stockItems);
+    const [stock, setStock] = useState(stockItems);  
+    console.log(stockItems)
 
     const SumaCount = () => {
-        if (contador < stock){
+        if (contador < stock) {
             setContador(contador + 1);
-        };        
+        };
     };
 
     const RestaCount = () => {
-        if (contador > 1){
+        if (contador > 1) {
             setContador(contador - 1);
-        };        
+        };
     };
 
     const onAdd = () => {
-        if (contador <= stock)
-        console.log (`Agregaste ${contador} productos al carrito.`)
-        setStock (stock - contador)
-        setContador (1)
+        if (contador <= stock) {
+            console.log(`Agregaste ${contador} productos al carrito.`)
+        setStock(stock - contador)
+        setContador(1)
+    }
     };
 
 
     return (
         <div className="container">
-            <div className="row mb-3">
-                <div className="col-md-2">
+            <div className="row mb-3">            
+                <div className="">
                     <div className="btn-group" role="group" aria-label="Basic outlined example">
                         <button type="button" className="btn btn-outline-primary" onClick={RestaCount}>-</button>
                         <button type="button" className="btn btn-outline-primary">{contador}</button>
