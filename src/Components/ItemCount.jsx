@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
+import Swal from 'sweetalert2'
 
-const ItemCount = ({ stockItems }) => {
 
+const ItemCount = ({ stockItems }) => {    
     const [contador, setContador] = useState(1);
     const [stock, setStock] = useState(0); 
     
@@ -24,7 +25,13 @@ const ItemCount = ({ stockItems }) => {
 
     const onAdd = () => {
         if (contador <= stock) {
-            console.log(`Agregaste ${contador} productos al carrito.`)
+            Swal.fire({
+                position: 'top-center',
+                icon: 'success',
+                title: 'Tus productos fueron agregados correctamente',
+                showConfirmButton: false,
+                timer: 1500
+              })
         setStock(stock - contador)
         setContador(1)
     }
