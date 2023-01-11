@@ -1,41 +1,34 @@
 import React, {useEffect, useState} from "react";
-import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom';
 
-
-const ItemCount = ({ stockItems }) => {    
+const ItemCount = ({stock, onAdd }) => {    
     const [contador, setContador] = useState(1);
-    const [stock, setStock] = useState(0); 
+    const [itemStock, setItemStock] = useState(stock); 
+    const [vendido, setVendido] = useState(false); 
     
-
     useEffect(() => {
-        setStock(stockItems)
-     }, [stockItems])
+        setItemStock(stock)
+     }, [stock]);
 
     const SumaCount = () => {
-        if (contador < stock) { 
+        if (contador < itemStock) {      
+            setVendido(false)      
             setContador(contador + 1);
         };
     };
 
     const RestaCount = () => {
-        if (contador > 1) {
+        if (contador > 1) {           
             setContador(contador - 1);
         };
     };
 
-    const onAdd = () => {
-        if (contador <= stock) {
-            Swal.fire({
-                position: 'top-center',
-                icon: 'success',
-                title: 'Tus productos fueron agregados correctamente',
-                showConfirmButton: false,
-                timer: 1500
-              })
-        setStock(stock - contador)
-        setContador(1)
+    const onCart = (quantity) => {
+        setItemStock(itemStock - quantity);
+        setContador(1);
+        setVendido(true);
+        onAdd(quantity);
     }
-    };
 
     return (
         <div className="container">
@@ -47,7 +40,7 @@ const ItemCount = ({ stockItems }) => {
                         <button type="button" id="buttonCountS" className="btn btn-outline-primary" onClick={SumaCount}>+</button>
                     </div>
                 </div>
-                <button type="button" className="btn btn-outline-success" onClick={onAdd}>Agregar al carrito</button>
+                {vendido ? <Link to={"/cart"}><button type="button" className="btn btn-outline-primary">Terminar compra</button></Link> : <button type="button" className="btn btn-outline-success" onClick={() => {onCart(contador)}}>Agregar al Carrito</button>}
             </div>
         </div>
     )

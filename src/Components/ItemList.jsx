@@ -2,17 +2,17 @@ import React from "react";
 import Item from "./Item";
 import '../index.css';
 
-const ItemList = ({ items }) => {    
+const ItemList = ({ items }) => {      
     return (
-        <div className="row itemList">
+        <section className="row itemList ">
             {
                 items.map(item =>
-                    <div className="col-md-6">
-                        <Item item={item} />
+                    <div key={item.id} className="col-md-6">
+                        <Item item={item} />                        
                     </div>
                 )
             }
-        </div>
+        </section>
     )
 }
  

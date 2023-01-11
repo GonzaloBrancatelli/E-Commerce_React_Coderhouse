@@ -7,10 +7,11 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import Error404 from './Components/Error404';
-
+import Cart from './Components/Cart';
+import CartContextProvider from './Components/context/cartContext'
 const App = () => {
 return(
-    <div>
+    <CartContextProvider>
         <BrowserRouter>
           <NavBar/>
           <Home/> 
@@ -18,14 +19,12 @@ return(
             <Route path={"/"} element={<ItemListContainer />}/>
             <Route path={"/category/:id"} element={<ItemListContainer />}/>
             <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
+            <Route path={"/cart"} element={<Cart/>}/>      
             <Route path={"*"} element={<Error404/>}/>
-          </Routes>
-                   
+          </Routes>                   
           <Footer/>
-        </BrowserRouter>           
-        
-    </div>     
-   
+        </BrowserRouter>       
+    </CartContextProvider>
 ); 
 };
 
