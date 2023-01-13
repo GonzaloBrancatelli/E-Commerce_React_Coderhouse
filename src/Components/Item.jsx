@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Item = ({ item }) => {
     return (
         <Link className="text-dark text-decoration-none" to={"/item/" + item.id}>
-            <div className="item">
+            <div className="item rounded-pill">
                 <div className="card mb-3">
                     <div className="row g-0 item">
                         <div className="col-md-4">
