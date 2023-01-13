@@ -33,3 +33,14 @@ footer{
 .item{
   background-color: #0fd3bc;
 }
+
+.backColor{
+  background-color: #003030;
+}
+.backColorLight{
+  background-color: white;
+}
+
+.colorBackground{
+  background: repeating-linear-gradient(0deg, rgb(0 153 153), #003030 458px);
+}

@@ -5,11 +5,12 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ({item}) => {   
     const {addItem} = useContext(CartContext);
     const onAdd = (quantity) =>{
+        
         addItem(item, quantity);
     }
         return (
-        <div className="row">
-            <div className="col-md-4 offset-md-4 text-center">
+        <div className="row backColorLight">
+            <div className="col-md-4 offset-md-4 text-center ">
                 <img className="img-fluid" src={item.imagen} alt={item.nombre} />
                 <h1>{item.nombre}</h1>
                 <p>{item.descripcion}</p>

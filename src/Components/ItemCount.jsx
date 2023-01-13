@@ -32,11 +32,11 @@ const ItemCount = ({stock, onAdd }) => {
 
     return (
         <div className="container">
-            <div className="row mb-3">            
-                <div className="">
+            <div className="row mb-3 " >            
+                <div className="p-3 ">
                     <div className="btn-group" role="group" aria-label="Basic outlined example">
                         <button type="button" id="buttonCountR" className="btn btn-outline-primary" onClick={RestaCount}>-</button>
-                        <button type="button" className="btn btn-outline-primary">{contador}</button>
+                        <button type="button" className="btn btn-primary">{contador}</button>
                         <button type="button" id="buttonCountS" className="btn btn-outline-primary" onClick={SumaCount}>+</button>
                     </div>
                 </div>

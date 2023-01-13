@@ -22,12 +22,8 @@ const NavBar = () => {
               <NavLink className="nav-link" to="/category/componentes">Componentes</NavLink>
               <NavLink className="nav-link" to="/category/periferico">Perifericos</NavLink>
             </div>            
-            <div className="d-flex align-items-center gap-3">
-              <CartWidget cantidadEnCarrito={5}/>
-              <form className='d-flex gap-3' role="search">
-                <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success" type="submit">Search</button>
-              </form>
+            <div className="d-flex align-items-center gap-3 m-3">
+              <CartWidget cantidadEnCarrito={5}/>              
             </div>
           </div>
         </div>
