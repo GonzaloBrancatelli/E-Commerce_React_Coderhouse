@@ -13,8 +13,7 @@ const Cart = () => {
                         <div className="alert alert-danger p-7" role="alert">No se encontraron Productos en el Carrito!</div>
                         <div className="p-3">
                           <Link to={"/"} className="btn btn-danger p-2">Volver a la Página Principal</Link>
-                        </div>
-                        
+                        </div>                        
                     </div>
                 </div>
             </div>
